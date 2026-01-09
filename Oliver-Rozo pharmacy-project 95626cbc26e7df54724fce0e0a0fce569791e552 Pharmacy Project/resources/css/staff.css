@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+header{
+    display:flex;
+    position: sticky;
+    top: 0;
+    align-content:center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: silver;
+    width: 100%;
+    min-width: 1300px;
+    height: 120px;
+    border-bottom: 3px solid blue;
+}
+
+header img {
+    height: 100px;
+    justify-self:left;
+    margin: 10px;
+}
+
+header input {
+    width: 900px;
+    height: 30px;
+}
+
+header button {
+    font-size: 20px;
+    text-align: center;
+}
+
+#searchbar {
+    border-radius: 100px;
+    border: solid 4px blue;
+    padding: 3px;
+    background-color: lightgray;
+    color:blue;
+}
+
+#searchbar::placeholder {
+    color: blue;
+}
+
+#searchbutton {
+    border: none;
+    background: none;
+    color: blue;
+}
+
+#searchbutton:hover {
+    opacity: 0.75;
+}
+
+.epicbuttons {
+    font-size: 50px;
+    background:none;
+    border:none;
+    color:blue;
+    margin: 0 5px;
+}
+
+.epicbuttons:hover {
+    opacity: 0.75;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(31, 57, 128);
+}
+
+main h1 {
+    margin: 4.8rem;
+    font-size: 4rem;
+    color: silver;
+}
+
+#staffbuttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 9rem;
+}
+
+a .buttons {
+    width: 30rem;
+    height: 8rem;
+    font-size: 2.5rem;
+    color:silver;
+    background-color: blue;
+    border-radius: 0.5rem;
+}
+
+.buttons:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+
+footer img {
+    width: 200px;
+    height: 200px;
+    padding: 50px 0 0 50px;
+}
+
+#contact {
+    padding: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 1921px) {
+    .frontpage1 {
+        width: 1920px;
+    }
+}

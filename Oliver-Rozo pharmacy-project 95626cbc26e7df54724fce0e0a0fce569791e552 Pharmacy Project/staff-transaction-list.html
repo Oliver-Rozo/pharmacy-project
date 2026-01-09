@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="./resources/css/staff-transaction-list.css">
+    <script src="https://kit.fontawesome.com/a8b5a230d7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./resources/js/staff-transaction-list.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./resources/images/placeholder-1-e1533569576673.jpg">
+        <form>
+            <input type="text" id="searchbar" placeholder="Search...">
+                <button id="searchbutton" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </input>
+        </form>
+        <form id="epicbuttons">
+            <i class="fa-solid fa-cart-shopping epicbuttons"></i>
+            <i class="fa-solid fa-comment epicbuttons"></i>
+            <a href="./login.html"><i class="fa-solid fa-circle-user epicbuttons"></i></a>
+        </form>
+    </header>
+    <h1>Transactions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody id="transactions-table">
+            <tr>
+                <td>Insulin Pens (100 units)</td>
+                <td>5</td>
+                <td>$175.00</td>
+                <td>04/27/2009 1:05 AM</td>
+            </tr>
+            <tr>
+                <td>Ibuprofen (200mg tablets)</td>
+                <td>1</td>
+                <td>$15.00</td>
+                <td>01/8/2026 10:05 PM</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="add-transaction">
+        <input type="text" id="transaction-name" placeholder="Enter Product Name">
+        <input type="number" id="transaction-stock" placeholder="Enter Purchase Quantity">
+        <input type="number" id="transaction-price" placeholder="Enter Total">
+        <input type="text" id="transaction-datetime" placeholder="Enter Date & Time">
+    </div>
+    <button type="button" id="add-transaction-button">Add Transaction</button>
+</body>
+</html>
